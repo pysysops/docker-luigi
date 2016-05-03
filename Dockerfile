@@ -18,6 +18,10 @@ RUN apt-get update && apt-get install -y \
     libxrender1 \
     pwgen \
     binutils \
+    freetds-bin \
+    freetds-common \
+    freetds-dev
+
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
