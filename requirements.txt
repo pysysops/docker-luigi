@@ -4,6 +4,5 @@ SQLAlchemy
 pandas
 Alembic
 luigi>=2.0
-sqlalchemy
 pymssql
 psycopg2
