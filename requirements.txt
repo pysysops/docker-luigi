@@ -2,7 +2,7 @@ Cython
 ipython
 SQLAlchemy
 pandas
-Alembic
+alembic
 luigi>=2.0
 pymssql
 psycopg2
