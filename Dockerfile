@@ -41,7 +41,7 @@ ENV LUIGI_CONFIG_PATH /etc/luigi/luigi.conf
 ADD requirements.txt /tmp/
 RUN conda config --add channels ioos
 RUN conda config --add channels pdrops
-RUN conda config --add channels prometeia
+RUN conda config --add channels pysysops
 RUN conda config --add channels pandas
 RUN conda install --file /tmp/requirements.txt
 
