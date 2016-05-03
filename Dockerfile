@@ -29,7 +29,7 @@ ENV MINICONDA_VERSION 3.16.0
 ENV CONDA_VERSION 3.19.0
 RUN mkdir -p /opt/conda
 RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh
-RUN wget https://repo.continuum.io/miniconda/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh
+RUN wget --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh
 RUN /bin/bash /Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh -b -p /opt/conda && \
     rm Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh && \
     /opt/conda/bin/conda install --yes conda==$CONDA_VERSION
